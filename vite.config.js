@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ command, mode }) => {
   console.log(command, mode);
   return {
-    base: command === "serve" ? "/" : mode === "netlify" ? "/" : "/pages/",
+    base: command === "serve" ? "/" : "/pages/",
     plugins: [react()],
   };
 });
